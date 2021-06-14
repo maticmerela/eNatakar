@@ -1,0 +1,119 @@
+[
+  {
+    "naziv": "Goveja juha",
+    "opis": "Tradicionalna slovenska goveja juha s koščki domače govedine",
+    "cena": 5,
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "https://www.freeiconspng.com/thumbs/soup-png/khanbaba-soup-png-4.png"
+
+  },
+  {
+    "naziv": "Gobova juha",
+    "opis": "Tradicionalna slovenska gobova juha, polna odličnih gob nabranih v slovenskih gozdovih",
+    "cena": 5,
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "https://www.freeiconspng.com/thumbs/soup-png/khanbaba-soup-png-4.png"
+
+  },
+  {
+    "naziv": "Satem1",
+    "opis": "Okusite najboljše kar naš okoliš lahko ponudi in dopustite, da Vas okusi prevzamejo",
+    "cena": 7,
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "https://urbanremedy.com/wp-content/uploads/SweetPotatoHummus_PDS.png"
+
+  },
+  {
+    "cena": "7",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "https://urbanremedy.com/wp-content/uploads/SweetPotatoHummus_PDS.png",
+    "naziv": "Satem2",
+    "opis": "Okusite najboljše kar naš okoliš lahko ponudi in dopustite, da Vas okusi prevzamejo"
+  },
+  {
+    "cena": "7",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "https://urbanremedy.com/wp-content/uploads/SweetPotatoHummus_PDS.png",
+    "naziv": "Satem3",
+    "opis": "Okusite najboljše kar naš okoliš lahko ponudi in dopustite, da Vas okusi prevzamejo"
+  },
+  {
+    "cena": "7",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "https://urbanremedy.com/wp-content/uploads/SweetPotatoHummus_PDS.png",
+    "naziv": "Satem4",
+    "opis": "Okusite najboljše kar naš okoliš lahko ponudi in dopustite, da Vas okusi prevzamejo"
+  },
+  {
+    "cena": "10",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "http://www.pngmart.com/files/5/Hamburger-PNG-Transparent-Image.png",
+    "naziv": "Burger1",
+    "opis": "Pravi ameriški burger, z 100% slovensko govedino, slanino in domačo omako"
+  },
+  {
+    "cena": "10",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "http://www.pngmart.com/files/5/Hamburger-PNG-Transparent-Image.png",
+    "naziv": "Burger2",
+    "opis": "Pravi ameriški burger, z 100% slovensko govedino, slanino in domačo omako"
+  },
+  {
+    "cena": "10",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "http://www.pngmart.com/files/5/Hamburger-PNG-Transparent-Image.png",
+    "naziv": "Burger3",
+    "opis": "Pravi ameriški burger, z 100% slovensko govedino, slanino in domačo omako"
+  },
+  {
+    "cena": "10",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "http://www.pngmart.com/files/5/Hamburger-PNG-Transparent-Image.png",
+    "naziv": "Burger4",
+    "opis": "Pravi ameriški burger, z 100% slovensko govedino, slanino in domačo omako"
+  },
+  {
+    "cena": "5",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "http://www.pngall.com/wp-content/uploads/2016/05/Salad-Free-Download-PNG.png",
+    "naziv": "Vegi Solata1",
+    "opis": "Tako naravna in dobra solata, da boste ostali vegeterijanci za zmeraj"
+  },
+  {
+    "cena": "5",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "http://www.pngall.com/wp-content/uploads/2016/05/Salad-Free-Download-PNG.png",
+    "naziv": "Vegi Solata2",
+    "opis": "Tako naravna in dobra solata, da boste ostali vegeterijanci za zmeraj"
+  },
+  {
+    "cena": "5",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "https://i.dlpng.com/static/png/6444299_preview.png",
+    "naziv": "Satemček1",
+    "opis": "Sladke sanje vsakega pravega gurmana v obliki tortice z svežim sadjem"
+  },
+  {
+    "cena": "5",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "https://i.dlpng.com/static/png/6444299_preview.png",
+    "naziv": "Satemček2",
+    "opis": "Sladke sanje vsakega pravega gurmana v obliki tortice z svežim sadjem"
+  },
+  {
+    "cena": "5",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "https://i.dlpng.com/static/png/6444299_preview.png",
+    "naziv": "Satemček3",
+    "opis": "Sladke sanje vsakega pravega gurmana v obliki tortice z svežim sadjem"
+  },
+  {
+    "cena": "5",
+    "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+    "slika": "https://i.dlpng.com/static/png/6444299_preview.png",
+    "naziv": "Satemček4",
+    "opis": "Sladke sanje vsakega pravega gurmana v obliki tortice z svežim sadjem"
+  }
+
+]
+

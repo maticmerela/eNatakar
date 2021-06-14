@@ -1,0 +1,44 @@
+
+tr {
+    text-align: center;
+}
+
+td {
+    font-size:10pt;
+    font-weight:bold;
+    text-align: center;
+}
+
+.container {
+    border: 0px;
+    border-radius: 15px;
+}
+
+.anton {
+    font-family: "Anton";
+    font-size: 1em;
+}
+
+.thead {
+    display: flex;
+    justify-content: end;
+}
+
+.zapri {
+    padding: 50px;
+}
+
+
+
+.stevilo {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+

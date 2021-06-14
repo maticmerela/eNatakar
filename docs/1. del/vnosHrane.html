@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+<html lang="sl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale = 1, shrink-to-fit = no">
+
+    <link rel="stylesheet" type="text/css" href="stili-vnosHrane.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <!-- pisava Anton -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <title>Vnos hrane</title>
+</head>
+<body class="body">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a>
+        &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;
+    </a>
+    <a class="navbar-brand mb-3" href="#">
+        <i class="fas text-info fa-utensils fa-2x"></i>
+        <t1 class="anton"> eNatakar &emsp;</t1>
+        <i class="fab fa-instagram fa-sm">&ensp;</i>
+        <i class="fab fa-facebook-f fa-sm">&ensp;</i>
+        <i class="fab fa-twitter fa-sm"></i>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <a class="nav-item col-9">
+        </a>
+        <div class="col-sm-2 text-center">
+            <button type="button" class="btn btn-outline-dark"><i class="fas fa-user"></i> &ensp; Miha Novak</button>
+        </div>
+    </div>
+
+
+</nav>
+
+
+<div>
+    <a class="col-2"></a>
+    <div class="row">
+        <div class="col-xl-4 col-lg-3 col-md-2 col-sm-1">
+
+        </div>
+        <div class="col-xl-4 col-lg-6 col-md-8 col-sm-10 ">
+            <div class="obroba">
+                <h3 class="anton">Vnos novega artikla na meni</h3>
+                <a class="col-2"></a>
+                <form>
+
+                    <div class="form-group">
+                        <label for="izbira">*Izberite vrsto jedi!</label>
+                        <select class="form-control" id="izbira">
+                            <option>Juha</option>
+                            <option>Predjed</option>
+                            <option>Glavna jed</option>
+                            <option>Solata</option>
+                            <option>Sladica</option>
+                            <option>Pijača</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ime">*Ime jedi oz. pijače: </label>
+                        <input type="text" class="form-control" id="ime" placeholder="Vnesite ime jedi!">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ime">*Cena jedi oz. pijače: </label>
+                        <input type="text" class="form-control" id="cena" placeholder="Določite ceno v EUR!">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="opis">Opis jedi: </label>
+                        <textarea class="form-control" id="opis" rows="4"></textarea>
+                        <small id="dodatnaNavodila" class="form-text text-muted">Opis jedi lahko dodate po
+                            želji.</small>
+                    </div>
+
+                    <div class="checkbox">
+                        <div class="rob-spodaj">
+                            <strong>*Označite alergene, ki jih vsebuje jed oz. pijača</strong>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""> gluten</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""> raki/ribe/mehkužci</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""> jajca</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""> arašidi</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""> laktoza</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""> soja</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="checkbox" value=""> oreščki</label>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value=""> listnata zelena</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value=""> gorčično seme</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value=""> sezamovo seme</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value=""> žveplov dioksid in sulfiti</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value=""> volčji bob</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" value=""> jed ne vsebuje alergenov</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <a class="col-2"></a>
+                <div>
+                    <strong>Polja označena z * je potrebno obvezno izpolniti!</strong>
+                </div>
+                <a class="col-2"></a>
+                <p>
+                    <button type="submit" class="btn btn-secondary">Dodaj na meni</button>
+                    <button type="submit" class="btn btn-secondary">Izbriši vnose</button>
+                </p>
+            </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-3 col-md-2 col-sm-1">
+
+        </div>
+    </div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>

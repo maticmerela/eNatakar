@@ -1,0 +1,14 @@
+[
+    {
+      "naziv": "Burger",
+      "cena": 7,
+      "slika": "http://www.pngmart.com/files/5/Hamburger-PNG-Transparent-Image.png",
+      "kolicina": 2
+    } , {
+      "naziv": "Pizza",
+      "cena": 8,
+      "slika": "http://www.pngall.com/wp-content/uploads/4/Pepperoni-Dominos-Pizza-PNG-Free-Download.png",
+      "kolicina": 1
+    }
+]
+

@@ -1,0 +1,15 @@
+.ozadje{
+    background-image: url('1. del/slika8.jpg');
+    background-size: 100%;
+    background-repeat: repeat;
+}
+.anton {
+	font-family: "Anton";
+	font-size: 1.5em;
+}
+.sredinska-poravnava{text-align:center;}
+.desna-poravnava {text-align: right}
+.rob-zgoraj-spodaj {margin-top: 40px;
+					margin-bottom: 20px;}
+.rob-video {border: 2px solid grey}
+}

@@ -1,0 +1,36 @@
+body {
+  background-image: url('../../assets/images/slika10.jpg');
+  background-position: bottom;
+  /* background-repeat: repeat;*/
+  background-attachment: fixed;
+}
+
+.container.skatla {
+  padding: 5em;
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5em;
+}
+
+.prijava {
+  background-color: rgba(255,255,255,0.9);
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
+  border-radius: 20px;
+
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.naslov {
+  font-family: "Anton";
+  font-size: 3em;
+  text-align: center;
+  margin: 0.7em;
+}

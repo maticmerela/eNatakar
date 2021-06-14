@@ -1,0 +1,24 @@
+[
+        {
+          "naziv": "Ameriški burger",
+          "opis": "Pravi ameriški burger, z 100% slovensko govedino, slanino in domačo omako",
+          "cena": 10,
+          "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+          "slika": "http://www.pngmart.com/files/5/Hamburger-PNG-Transparent-Image.png"
+
+        }, {
+          "naziv": "Kraljeva pica",
+          "opis": "Mojstrska italijanska pica z dimljenim lososom, kaviarjem in škampi",
+          "cena": 10,
+          "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+          "slika": "http://www.pngall.com/wp-content/uploads/4/Pepperoni-Dominos-Pizza-PNG-Free-Download.png"
+        },  {
+          "naziv": "Pad Thai",
+          "opis": "Tajski hit je prišel tudi k nam! Odlični Pad Thai pripravljen z ljubeznijo našega šefa.",
+          "cena": 10,
+          "alergeni": [true, false, true, false, false, true, false, false, true, false, false, false, false],
+          "slika": "https://www.noodles.com/wp-content/uploads/2020/06/ML_PadThaiShrimp_72dpi_rgb_OLO_OH-1050x700.png"
+        }
+      ]
+
+

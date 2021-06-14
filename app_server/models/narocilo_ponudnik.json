@@ -1,0 +1,38 @@
+[
+  {
+    "kosarica": [
+      {
+        "naziv": "Burger",
+        "cena": 7,
+        "slika": "burger.jpg",
+        "kolicina": 1
+      },
+      {
+        "naziv": "Pizza",
+        "cena": 8,
+        "slika": "pizza.jpg",
+        "kolicina": 1
+      }
+    ],
+    "stMize": 3,
+    "stanje": true
+  },
+  {
+    "kosarica": [
+      {
+        "naziv": "Pizza",
+        "cena": 8,
+        "slika": "pizza.jpg",
+        "kolicina": 1
+      },
+      {
+        "naziv": "Pizza",
+        "cena": 8,
+        "slika": "pizza.jpg",
+        "kolicina": 1
+      }
+    ],
+    "stMize": 5,
+    "opombe": "brez gobic"
+  }
+]

@@ -1,0 +1,69 @@
+<div class ="jumbotron jumbotron-fluid ozadjeIndex " style = "width:100%; height: 600px;">
+  <div class = "container">
+    <div class="row align-items-center"></div>
+    <div class="row align-items-center">
+      <div class="col">
+
+        <div class=" anton col-md-9 text-white rob-zgoraj">
+          <h1 class="display-5">{{glavaStrani.moto}}</h1>
+        </div>
+
+        <div class="col-md-9">
+          <div class="form-inline my-2 my-lg-0">
+            <!--                        <input class="form-control form-control-lg mr-sm-0 col-8-->
+            <!--                                 border-right-0 "-->
+            <!--                               style="border-radius: 10px 0px 0px 5px; "-->
+            <!--                               type="search" placeholder="Vnesite ime restavracije">-->
+            <div style= "margin-left: auto; margin-right: auto" class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Izberite željeno restavracijo &ensp; <i class="fas fa-search"></i></button>
+              <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Išči..." id="myInput" onkeyup="filterFunction()">
+                <div *ngFor = "let ponudnik of ponudnik" >
+                <a routerLink="/osnovno/{{ponudnik._id}}/menu">{{ponudnik.obrat}}</a>
+                </div>
+              </div>
+            </div>
+
+
+            <!--                        <button class="btn btn-secondary btn-lg my-2 my-sm-0 col-2 border-left-0"-->
+            <!--                                style="border-radius: 0px 5px 5px 0px;"-->
+            <!--                                type="submit"><i class="fas text-white fa-search"></i></button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xl-3 col-lg-2 col-md-1 col-sm-0">
+  </div>
+  <div class="col-xl-6 col-lg-8 col-md-10 col-sm-12">
+    <h4 class="anton sredinska-poravnava rob-zgoraj-spodaj">{{glavaStrani.navodila}}</h4>
+    <app-graf></app-graf>
+  </div>
+  <div class="col-xl-3 col-lg-2 col-md-1 col-sm-0">
+  </div>
+</div>
+<script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+      txtValue = a[i].textContent || a[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+      } else {
+        a[i].style.display = "none";
+      }
+    }
+  }
+</script>
+

@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="stili.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Prevedeni in minimizirani slogi CSS verzije 4.5.2 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+          crossorigin="anonymous">
+
+    <!-- Podporni knjižnici jQuery in Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+
+    <!-- Prevedena in minimizirana JavaScript koda verzije 4.5.2 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+    <title>eNatakar</title>
+
+</head>
+
+<body>
+
+
+<div class="container-fluid" style="background-color: rgb(248,248,248);">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a>
+            &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;
+        </a>
+        <a class="navbar-brand mb-3" href="#">
+            <i class="fas text-info fa-utensils fa-2x"></i>
+            <t1 class="anton"> eNatakar &emsp;</t1>
+            <i class="fab fa-instagram fa-sm">&ensp;</i>
+            <i class="fab fa-facebook-f fa-sm">&ensp;</i>
+            <i class="fab fa-twitter fa-sm"></i>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <a class="nav-item col-9"></a>
+            <a class="col-sm-2 text-center">
+                <button type="button" class="btn btn-outline-dark"><i class="fas fa-user"></i> &ensp; Bistro Satem
+                </button>
+            </a>
+        </div>
+
+
+    </nav>
+</div>
+
+
+<div class="jumbotron jumbotron-fluid naslovna" style="margin-bottom: 0;">
+    <div class="container">
+        <h1 style=" font-family: Anton">Bistro Satem</h1>
+        <p style="text-align: center;">Prepustite razvajanje svojih brbončic ekipi Bistroja Satem in dovolite da Vas
+            popeljemo na kulinarično popotovanje</p>
+    </div>
+</div>
+
+
+<div class="text-center star "><i class="fas fa-star"></i><i class="fas fa-star "></i><i class="fas fa-star"></i><i
+        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+
+
+<div class="container">
+
+    <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button"
+                id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+            Skoči na
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <h6 class="dropdown-header">Najbolj priljubljene jedi</h6>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">Juhe</h6>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">Predjedi</h6>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">Glavne jedi</h6>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">Solate</h6>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">Sladice</h6>
+            <div class="dropdown-divider"></div>
+            <h6 class="dropdown-header">Pijače</h6>
+
+
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <input class="form-control" type="text" placeholder="Iskanje" aria-label="Search">
+
+</div>
+
+
+<div class="container">
+    <p class="mostpopular">Najbolj priljubljene jedi</p>
+
+    <div class="row text-center">
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+
+
+            <div class="card " style="width:100% ">
+                <span class="notify-badge">10&euro;</span>
+                <img class="card-img-top " src="http://www.pngmart.com/files/5/Hamburger-PNG-Transparent-Image.png"
+                     alt="Card image">
+                <div class="collapse" id="mp-1">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Ameriški burger</h4>
+                    <p class="card-text">Pravi ameriški burger, z 100% slovensko govedino, slanino in domačo omako</p>
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#mp-1" role="button"
+                       aria-expanded="false" aria-controls="mp-1">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+
+            <div class="card " style="width:100%">
+                <span class="notify-badge">10&euro;</span>
+                <img class="card-img-top "
+                     src="http://www.pngall.com/wp-content/uploads/4/Pepperoni-Dominos-Pizza-PNG-Free-Download.png"
+                     alt="Card image">
+                <div class="collapse" id="mp-2">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Kraljeva pica</h4>
+                    <p class="card-text">Mojstrska italijanska pica z dimljenim lososom, kaviarjem in škampi</p>
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#mp-2" role="button"
+                       aria-expanded="false" aria-controls="mp-2">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+            <div class="card" style="width:100%">
+                <span class="notify-badge">10&euro;</span>
+                <img class="card-img-top"
+                     src="https://www.noodles.com/wp-content/uploads/2020/06/ML_PadThaiShrimp_72dpi_rgb_OLO_OH-1050x700.png"
+                     alt="Card image">
+                <div class="collapse" id="mp-3">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title">Pad Thai</h4>
+                    <p class="card-text">Tajski hit je prišel tudi k nam! Odlični Pad Thai pripravljen z ljubeznijo
+                        našega šefa.</p>
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#mp-3" role="button"
+                       aria-expanded="false" aria-controls="mp-3">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class="container ">
+
+
+    <p class="mostpopular">Juhe</p>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">5&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu"
+                             src="https://www.freeiconspng.com/thumbs/soup-png/khanbaba-soup-png-4.png"
+                             alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Goveja juha</h4>
+                        <p class="card-text">Tradicionalna slovenska goveja juha s koščki domače govedine</p>
+                    </div>
+                </div>
+                <div class="collapse" id="juhe-1">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#juhe-1" role="button"
+                       aria-expanded="false" aria-controls="juhe-1">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">5&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu"
+                             src="https://www.freeiconspng.com/thumbs/soup-png/khanbaba-soup-png-4.png"
+                             alt="Card image cap">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Gobova juha</h4>
+                        <p class="card-text">Tradicionalna slovenska gobova juha, polna odličnih gob nabranih v
+                            slovenskih gozdovih</p>
+                    </div>
+                </div>
+                <div class="collapse" id="juhe-2">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#juhe-2" role="button"
+                       aria-expanded="false" aria-controls="juhe-2">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <p class="mostpopular">Predjedi</p>
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">7&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu"
+                             src="https://urbanremedy.com/wp-content/uploads/SweetPotatoHummus_PDS.png"
+                             alt="Card image cap"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Satem</h4>
+                        <p class="card-text">Okusite najboljše kar naš okoliš lahko ponudi in dopustite, da Vas okusi
+                            prevzamejo</p>
+                    </div>
+                </div>
+                <div class="collapse" id="pred-1">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#pred-1" role="button"
+                       aria-expanded="false" aria-controls="pred-1">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">7&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu"
+                             src="https://urbanremedy.com/wp-content/uploads/SweetPotatoHummus_PDS.png"
+                             alt="Card image cap"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Satem</h4>
+                        <p class="card-text">Okusite najboljše kar naš okoliš lahko ponudi in dopustite, da Vas okusi
+                            prevzamejo</p>
+                    </div>
+                </div>
+                <div class="collapse" id="pred-2">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#pred-2" role="button"
+                       aria-expanded="false" aria-controls="pred-2">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">7&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu"
+                             src="https://urbanremedy.com/wp-content/uploads/SweetPotatoHummus_PDS.png"
+                             alt="Card image cap"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Satem</h4>
+                        <p class="card-text">Okusite najboljše kar naš okoliš lahko ponudi in dopustite, da Vas okusi
+                            prevzamejo</p>
+                    </div>
+                </div>
+                <div class="collapse" id="pred-3">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#pred-3" role="button"
+                       aria-expanded="false" aria-controls="pred-3">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">7&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu"
+                             src="https://urbanremedy.com/wp-content/uploads/SweetPotatoHummus_PDS.png"
+                             alt="Card image cap"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Satem</h4>
+                        <p class="card-text">Okusite najboljše kar naš okoliš lahko ponudi in dopustite, da Vas okusi
+                            prevzamejo</p>
+                    </div>
+                </div>
+                <div class="collapse" id="pred-4">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#pred-4" role="button"
+                       aria-expanded="false" aria-controls="pred-4">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <p class="mostpopular">Glavne jedi</p>
+
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">10&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu" src="http://www.pngmart.com/files/5/Hamburger-PNG-Transparent-Image.png"
+                             alt="Card image cap"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Burger</h4>
+                        <p class="card-text">Pravi ameriški burger, z 100% slovensko govedino, slanino in domačo
+                            omako.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="main-1">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#main-1" role="button"
+                       aria-expanded="false" aria-controls="main-1">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">10&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu" src="http://www.pngmart.com/files/5/Hamburger-PNG-Transparent-Image.png"
+                             alt="Card image cap"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Burger</h4>
+                        <p class="card-text">Pravi ameriški burger, z 100% slovensko govedino, slanino in domačo
+                            omako.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="main-2">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#main-2" role="button"
+                       aria-expanded="false" aria-controls="main-2">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">10&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu" src="http://www.pngmart.com/files/5/Hamburger-PNG-Transparent-Image.png"
+                             alt="Card image cap"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Burger</h4>
+                        <p class="card-text">Pravi ameriški burger, z 100% slovensko govedino, slanino in domačo
+                            omako.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="main-3">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#main-3" role="button"
+                       aria-expanded="false" aria-controls="main-3">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">10&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu" src="http://www.pngmart.com/files/5/Hamburger-PNG-Transparent-Image.png"
+                             alt="Card image cap"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Burger</h4>
+                        <p class="card-text">Pravi ameriški burger, z 100% slovensko govedino, slanino in domačo
+                            omako.</p>
+                    </div>
+                </div>
+                <div class="collapse" id="main-4">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#main-4" role="button"
+                       aria-expanded="false" aria-controls="main-4">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <p class="mostpopular">Solate</p>
+
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">5&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu"
+                             src="http://www.pngall.com/wp-content/uploads/2016/05/Salad-Free-Download-PNG.png"
+                             alt="Solata"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Vegi solata</h4>
+                        <p class="card-text">Tako naravna in dobra solata, da boste ostali vegeterijanci za zmeraj</p>
+                    </div>
+                </div>
+                <div class="collapse" id="solate-1">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#solate-1" role="button"
+                       aria-expanded="false" aria-controls="solate-1">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">5&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu"
+                             src="http://www.pngall.com/wp-content/uploads/2016/05/Salad-Free-Download-PNG.png"
+                             alt="Solata"></div>
+                    <div class="card-body">
+                        <h4 class="card-title">Vegi solata</h4>
+                        <p class="card-text">Tako naravna in dobra solata, da boste ostali vegeterijanci za zmeraj</p>
+                    </div>
+                </div>
+                <div class="collapse" id="solate-2">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#solate-2" role="button"
+                       aria-expanded="false" aria-controls="solate-2">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <p class="mostpopular">Sladice</p>
+
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">5&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu" src="https://i.dlpng.com/static/png/6444299_preview.png" alt="Torta">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Satemček</h4>
+                        <p class="card-text">Saldke sanje vsakega pravega gurmana v obliki tortice z svežim sadjem</p>
+                    </div>
+                </div>
+                <div class="collapse" id="des-1">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#des-1" role="button"
+                       aria-expanded="false" aria-controls="des-1">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">5&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu" src="https://i.dlpng.com/static/png/6444299_preview.png" alt="Torta">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Satemček</h4>
+                        <p class="card-text">Saldke sanje vsakega pravega gurmana v obliki tortice z svežim sadjem</p>
+                    </div>
+                </div>
+                <div class="collapse" id="des-2">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#des-2" role="button"
+                       aria-expanded="false" aria-controls="des-2">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">5&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu" src="https://i.dlpng.com/static/png/6444299_preview.png" alt="Torta">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Satemček</h4>
+                        <p class="card-text">Saldke sanje vsakega pravega gurmana v obliki tortice z svežim sadjem</p>
+                    </div>
+                </div>
+                <div class="collapse" id="des-3">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#des-3" role="button"
+                       aria-expanded="false" aria-controls="des-3">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div class="card">
+                <div class="card-horizontal">
+                    <span class="notify-badge">5&euro;</span>
+                    <div class="img-square-wrapper">
+                        <img class="slikamenu" src="https://i.dlpng.com/static/png/6444299_preview.png" alt="Torta">
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Satemček</h4>
+                        <p class="card-text">Saldke sanje vsakega pravega gurmana v obliki tortice z svežim sadjem</p>
+                    </div>
+                </div>
+                <div class="collapse" id="des-4">
+                    <div class="card card-body">
+                        Alergeni: 1,3,6,9
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-warning">Urejaj</a>
+                    <a href="#" class="btn btn-danger">Odstrani</a>
+                    <a class="btn btn-primary informacije" data-toggle="collapse" href="#des-4" role="button"
+                       aria-expanded="false" aria-controls="des-4">
+                        <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                  d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+                            <circle cx="8" cy="4.5" r="1"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<footer class="page-footer font-small blue">
+
+
+    <div class="footer-copyright text-center py-3">© 2020 eNatakar
+        <a href="#"> eNatakar@gmail.com</a>
+    </div>
+</footer>
+
+
+</body>
+
+
+</html>
+
+

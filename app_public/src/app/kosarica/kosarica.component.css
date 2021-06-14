@@ -1,0 +1,94 @@
+.ozadjeKosarica {
+    background-image: url('../../assets/images/slika1.jpg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+@media handheld and (max-width: 480px),
+screen and (max-device-width: 480px),
+screen and (max-width: 480px) {
+    td {
+        font-size: 15px;
+    }
+    #slika {
+        width: 60%;
+        height: 60%;
+    }
+    #spodi {
+        font-size: 15px;
+    }
+    #skupnaCena {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    td {
+        font-size: 20px;
+    }
+    #slika {
+        width: 50%;
+        height: 50%;
+    }
+    #spodi {
+        font-size: 20px;
+    }
+    #skupnaCena {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    td {
+        font-size: 25px;
+    }
+    #slika {
+        width: 50%;
+        height: 50%;
+    }
+    #spodi {
+        font-size: 25px;
+    }
+    #skupnaCena {
+        font-size: 25px;
+    }
+}
+
+tr {
+    text-align: center;
+}
+
+.kontejner {
+    border: 0px;
+    border-radius: 15px;
+    opacity: 0.95;
+}
+
+.anton {
+    font-family: "Anton";
+    font-size: 1em;
+}
+
+.thead {
+    display: flex;
+    justify-content: end;
+}
+
+.zapri {
+    padding: 50px;
+}
+
+
+.stevilo {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}

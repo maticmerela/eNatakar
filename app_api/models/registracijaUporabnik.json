@@ -1,0 +1,20 @@
+[
+  {
+    "ime": "Marko",
+    "priimek": "Potrč",
+    "uporabniskoIme": "majmun",
+    "geslo": "123456789"
+  },
+  {
+    "ime": "Danny",
+    "priimek": "deVito",
+    "uporabniskoIme": "littleTwin",
+    "geslo": "123456789"
+  },
+  {
+    "ime": "Arnold",
+    "priimek": "Swarzenegger",
+    "uporabniskoIme": "bigTwin",
+    "geslo": "123456789"
+  }
+]

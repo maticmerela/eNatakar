@@ -1,0 +1,99 @@
+<div [ngStyle]="{'background' : 'url(../../assets/images/slika1.jpg)'}">
+
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+  <div class="kosarica">
+
+    <h3 class='anton'>{{kosarica2.naslov}} <span class="fas fa-shopping-cart"></span></h3>
+    <ul style="list-style-type:none;">
+        <li *ngFor="let element of placila"><span class="kolicina" name="kolicinaPlacilo">{{element.kolicina}}X</span>
+          <span class="artikel">{{element.naziv}}</span> <span class="cena" name="cenaPlacilo">{{element.cena}}€</span></li>
+      <li><strong><span class="kolicina">{{kosarica2.skupaj}}</span> <span class="cena" id="skupnaCenaPlacilo">.</span></strong></li>
+    </ul>
+  </div>
+
+
+  <div class="placilo">
+
+    <h2 class='anton'>{{placilo.naslov}} <span class="fas fa-credit-card"></span></h2>
+    <p> {{placilo.navodila}}</p>
+    <form action="#" method="post" role="form" id="placiloObrazec">
+      <div class="form-group">
+        <label><strong>Ime in priimek imetnika kartice:</strong></label>
+        <input name="ime" type="text" class="form-control" id="ime" placeholder="Ime Priimek" required>
+      </div>
+
+
+      <div class="form-group">
+        <label><strong>Številka kartice:</strong></label>
+        <input name="kartica" type="text" class="form-control" id="kartica" size="19"
+               placeholder="0000 0000 0000 0000" required>
+      </div>
+      <div class="form-group">
+        <label><strong>CVV:</strong></label>
+        <input name="cvv" type="text" class="form-control" id="cvv" size="3" placeholder="000" required>
+      </div>
+      <div class="form-group">
+        <p><strong>Veljavno do:</strong></p>
+
+        <label> Mesec:</label>
+        <select name="mesec" class="form-control" id="mesec">
+          <option selected>Januar</option>
+          <option>Februar</option>
+          <option>Marec</option>
+          <option>April</option>
+          <option>Maj</option>
+          <option>Junij</option>
+          <option>Julij</option>
+          <option>Avgust</option>
+          <option>September</option>
+          <option>Oktober</option>
+          <option>November</option>
+          <option>December</option>
+        </select>
+
+      </div>
+      <div class="form-group">
+        <label> Leto:</label>
+        <select name="leto" class="form-control" id="leto">
+          <option selected>2021</option>
+          <option>2022</option>
+          <option>2023</option>
+          <option>2024</option>
+          <option>2025</option>
+          <option>2026</option>
+        </select>
+
+      </div>
+      <div class="form-group">
+        <label><strong>Opombe:</strong></label>
+        <textarea class="form-control" id="opombe" name="opombe" rows="3"
+                  placeholder="Vnesite opombe npr. brez ledu, brez gob..."></textarea>
+
+      </div>
+      <div class="form-group">
+        <label><strong>Oznaka mize:</strong></label>
+        <input name="stMize" type="text" class="form-control" id="miza" placeholder="0" required>
+      </div>
+
+      <button type="submit" class="btn btn-info" style="margin-right: 5px"><a class="obdelava" routerLink="nalaganje">Plačaj in oddaj naročilo</a>
+      </button>
+      <button type="reset" class="btn btn-outline-info">Izbriši vnose</button>
+
+    </form>
+  </div>
+
+</div>
+<a class="col-2"></a>
+<div class="container">
+
+  <nav aria-label="pagination">
+    <ul class="pagination justify-content-center">
+
+      <li class="page-item" style="background-color: rgb(255, 255, 255); border-radius:5pt;"><a
+        class="nav-link btn btn-outline-dark" routerLink="/{{placilo2._id}}/kosarica">Nazaj na košarico</a></li>
+
+
+    </ul>
+  </nav>
+</div>
+</div>

@@ -1,0 +1,141 @@
+body {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+body, html {
+  width: 100%;
+}
+
+/*pisava anton*/
+.anton {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5em;
+}
+/*OSNOVNI ZASLON - index*/
+
+
+/* NALAGANJE*/
+
+/* VNOS HRANE*/
+
+
+/*TABELA NAROČIL (PONUDNIK)*/
+/*
+.container {
+  position: relative;
+  bottom: -5ex;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px 20px 15px 20px;
+  border-radius: 5px;
+}
+*/
+
+/*RAZDELEK KOŠARICA PRI PLAČILU*/
+.kosarica {
+
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 20px 15px 20px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/*RAZDELEK PLAČILO PRI PLAČILU*/
+.placilo {
+
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 20px 15px 20px;
+  border-radius: 5px;
+  position: relative;
+  bottom: -1ex;
+  margin: 5px
+}
+
+/*POZICIJA CENE*/
+span.cena {
+  float: right;
+}
+
+/*POZICIJA ARTIKLA*/
+span.artikel {
+  position: relative;
+  left: -2ex;
+}
+.paddingNaslov {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.paddingSocial {
+  padding-right: 0.4em;
+}
+
+/*POZICIJA KOLIČINE*/
+span.kolicina {
+  position: relative;
+  left: -3ex;
+}
+
+.sredinska-poravnava{text-align:center;}
+.desna-poravnava {text-align: right}
+.rob-zgoraj-spodaj {margin-top: 40px;
+  margin-bottom: 20px;}
+.rob-video {
+  border: 2px solid grey;
+  border-radius: 15px;
+}
+.rob-zgoraj {
+  padding: 100px;
+}
+.dropbtn {
+  background-color: whitesmoke;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: gray;
+  border-radius: 5px;
+  border: 2px;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: lightgrey;
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: grey;
+  border-radius: 5px;
+  border: 2px;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+

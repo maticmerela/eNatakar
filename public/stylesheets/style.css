@@ -1,0 +1,85 @@
+body {
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+body, html {
+  width: 100%;
+}
+
+/*pisava anton*/
+.anton {
+  font-family: "Anton", sans-serif;
+  font-size: 1.5em;
+}
+/*OSNOVNI ZASLON - index*/
+
+
+/* NALAGANJE*/
+
+/* VNOS HRANE*/
+
+
+/*TABELA NAROČIL (PONUDNIK)*/
+/*
+.container {
+  position: relative;
+  bottom: -5ex;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px 20px 15px 20px;
+  border-radius: 5px;
+}
+*/
+
+
+/*OZADJE NAROČIL*/
+.ozadje_prejeta_narocila {
+
+  background-image: url('../images/bns.png');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+ /*OZADJE PLAČILO*/
+ .ozadje_placilo {
+  background-image: url('../images/slika1.jpg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ }
+
+ /*RAZDELEK KOŠARICA PRI PLAČILU*/
+ .kosarica {
+
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 20px 15px 20px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+/*RAZDELEK PLAČILO PRI PLAČILU*/
+.placilo {
+
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 20px 15px 20px;
+  border-radius: 5px;
+  position: relative;
+  bottom: -1ex;
+  margin: 5px
+}
+
+/*POZICIJA CENE*/
+span.cena {
+  float: right;
+}
+
+/*POZICIJA ARTIKLA*/
+span.artikel {
+  position: relative;
+  left: -2ex;
+}
+
+/*POZICIJA KOLIČINE*/
+span.kolicina {
+  position: relative;
+  left: -3ex;
+}

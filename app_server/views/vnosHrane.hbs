@@ -1,0 +1,116 @@
+<div class="ozadjeHrana container-fluid my-class">
+    <a class="col-2"></a>
+    <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-2 col-sm-1">
+
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 ">
+            <div class="obroba">
+                <h3 class="anton">{{naslov}}</h3>
+                <a class="col-2"></a>
+                <form method="post" role="form" id="vnosHraneObrazec">
+                    <div class="form-group">
+                        <label for="izbira">{{navodila.vrsta}}</label>
+                        <select class="form-control" id="izbira">
+                            <option>Juha</option>
+                            <option>Predjed</option>
+                            <option>Glavna jed</option>
+                            <option>Solata</option>
+                            <option>Sladica</option>
+                            <option>Pijača</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ime">{{navodila.ime}} </label>
+                        <input name="naziv" type="text" class="form-control" id="ime" placeholder="Vnesite ime jedi!" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cena">{{navodila.cena}} </label>
+                        <input name="cena" type="text" class="form-control" id="cena" placeholder="Določite ceno v EUR!" required>
+                    </div>
+
+                    <div class="file-upload-wrapper rob-spodaj">
+                        <label for="file-upload"> {{navodila.slika}}</label>
+                        <input name="slika" type="file" id="input-file-max-fs" class="file-upload" data-max-file-size="2M"/>
+                    </div>
+
+                    <div class="form-group ">
+                        <label for="opis">{{navodila.opis}} </label>
+                        <textarea name="opis" class="form-control" id="opis" rows="4"></textarea>
+                        <small id="dodatnaNavodila" class="form-text text-muted">Opis jedi lahko dodate po
+                            želji.</small>
+                    </div>
+
+                    <div class="checkbox">
+                        <div class="rob-spodaj">
+                            <strong>{{navodila.alergeni}}</strong>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.gluten}}</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.raki}}</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.jajca}}</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.arasidi}}</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.laktoza}}</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.soja}}</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.orescki}}</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.zelena}}</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.gorcica}}</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.sezam}}</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.dioksid}}</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.bob}}</label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.brez}}</label>
+                        </div>
+                    </div>
+
+                    <a class="col-2"></a>
+                    <div class="rob-spodaj">
+                        <strong>{{navodila.obvezno}}</strong>
+                    </div>
+                    <a class="col-2"></a>
+                    <p>
+
+                            <button type="submit" class="btn btn-info"><a href="/ponudnik/menu">Dodaj na meni</a></button>
+
+                        <button type="reset" class="btn btn-outline-info">Izbriši vnose</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-2 col-sm-1">
+
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    ('.file-upload').file_upload();
+</script>
+<!-- referenca na datoteko za preverjanje z regEx -->
+<script src="/javascripts/regularniVnosHrane.js"></script>

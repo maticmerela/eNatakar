@@ -1,0 +1,187 @@
+<div class="bodyPon">
+    <div class="container skatla">
+        <div class="daljsiObrazec">
+            <h1 class="naslov">{{vsebina.naslov}}</h1>
+            <form method="post" role="form" id="registracijaObrazec" autocomplete="on">
+                <h2 class="h2">{{vsebina.uporabnik}}</h2>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label><strong>Ime: </strong></label>
+                        <input name="ime" class="form-control" type="text" id="ime" placeholder="Vnesite ime" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label><strong>Priimek: </strong></label>
+                        <input name="priimek" class="form-control" type="text" id="priimek" placeholder="Vnesite priimek" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label><strong>E-poštni naslov: </strong></label>
+                    <input name="uporabniskoIme" class="form-control" type="email" id="mail" placeholder="Vnesite e-poštni naslov"
+                           required>
+                </div>
+                <div class="form-group">
+                    <label><strong>Geslo: </strong></label>
+                    <input name="geslo" autocomplete="off" class="form-control" type="password" id="geslo" id="geslo" placeholder="Vnesite geslo" required>
+                </div>
+                <h2 class="h2">{{vsebina.obrat}}</h2>
+                <div class="form-group">
+                    <label><strong>Ime obrata: </strong></label>
+                    <input name="obrat" class="form-control" type="text" id="imeObrata" placeholder="Vnesite ime obrata" required>
+                </div>
+
+                <!--
+                <br>
+                <p><strong>Ponudba vključuje: </strong><br>
+                <div class="form-row">
+                    <div class="col-md-4">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="ponudba" value="pijačo">Pijačo</label>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-check-label">
+                            <input name="ponudba" class="form-check-input" type="radio" name="ponudba" value="Hrano">Hrano in
+                            pijačo</label>
+                    </div>
+                </div>
+                <br>-->
+
+
+                <div class="form-group col-md-9">
+                    <label><strong>Tip kuhinje: </strong><br></label>
+                    <input name="tipKuhinje" class="form-control" type="text" id="tipKuhinje" placeholder="Tip kuhinje" required>
+                </div>
+
+                <!--
+                <p><strong>Tip kuhinje: </strong><br>
+                <div class="center">
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <label class="form-check-label">
+                                <input name=tipKuhinje class="form-check-input" type="checkbox" value>{{vsebina.tipKuhinje.tipKuhinje1}}</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-check-label">
+                                <input name=tipKuhinje class="form-check-input" type="checkbox" value>{{vsebina.tipKuhinje.tipKuhinje2}}</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-check-label">
+                                <input name=tipKuhinje class="form-check-input" type="checkbox" value>{{vsebina.tipKuhinje.tipKuhinje3}}</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <label class="form-check-label">
+                                <input name=tipKuhinje class="form-check-input" type="checkbox" value>{{vsebina.tipKuhinje.tipKuhinje4}}</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-check-label">
+                                <input name=tipKuhinje class="form-check-input" type="checkbox" value>{{vsebina.tipKuhinje.tipKuhinje5}}</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-check-label">
+                                <input name=tipKuhinje class="form-check-input" type="checkbox" value>{{vsebina.tipKuhinje.tipKuhinje6}}</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <label class="form-check-label">
+                                <input name=tipKuhinje class="form-check-input" type="checkbox" value>{{vsebina.tipKuhinje.tipKuhinje7}}</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-check-label">
+                                <input name=tipKuhinje class="form-check-input" type="checkbox" value>{{vsebina.tipKuhinje.tipKuhinje8}}</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-check-label">
+                                <input name=tipKuhinje class="form-check-input" type="checkbox" value>{{vsebina.tipKuhinje.tipKuhinje9}}</label>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-4">
+                            <label class="form-check-label">
+                                <input name=tipKuhinje class="form-check-input" type="checkbox" value>{{vsebina.tipKuhinje.tipKuhinje10}}</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-check-label">
+                                <input name=tipKuhinje class="form-check-input" type="checkbox" value>{{vsebina.tipKuhinje.tipKuhinje11}}</label>
+                        </div>
+                        <div class="col-md-4">
+                            <label class="form-check-label">
+                                <input name=tipKuhinje class="form-check-input" type="checkbox" value>{{vsebina.tipKuhinje.tipKuhinje12}}</label>
+                        </div>
+                    </div>
+                </div>-->
+                <br>
+                <div class="form-row">
+                    <div class="form-group col-md-9">
+                        <label><strong>Naslov: </strong><br></label>
+                        <input name="ulica" class="form-control" type="text" id="ulica" placeholder="Ulica" required>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label><strong></strong><br></label>
+                        <input name="hisnaSt" class="form-control" type="text" id="hisna" placeholder="Hišna Številka" required>
+                    </div>
+                </div>
+                <div class="form row">
+                    <div class="form-group col-md-5">
+                        <input name="zip" class="form-control" type="text" id="zip" placeholder="ZIP" required>
+                    </div>
+                    <div class="form-group col-md-7">
+                        <input name="obcina" class="form-control" type="text" id="obcina" placeholder="Občina" required>
+                    </div>
+                </div>
+                <br>
+                <!--<div class="justify-content-around">
+                    <p><strong>Delovni čas:</strong></p>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value>Ponedeljek</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value>Torek</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value>Sreda</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value>Četrtek</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value>Petek</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value>Sobota</label>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value>Nedelja</label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-row justify-content-around">
+                        <div class="form-group col-md-4">
+                            <p><label><strong>Od</strong>:0
+                                <input type="range" min="0" max="24" value="10"/> 24</label></p>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <p><label><strong>Do</strong>:0
+                                <input type="range" min="0" max="24" value="10"/> 24</label></p>
+                        </div>
+                    </div>
+                </div>-->
+                <div class="gumbi">
+                    <a href="/"><btn class="btn btn-info" name="submit" value="">Registracija</btn></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/javascripts/regularni_registracijaPonudnika.js"></script>

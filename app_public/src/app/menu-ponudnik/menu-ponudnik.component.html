@@ -1,0 +1,140 @@
+<div class="jumbotron jumbotron-fluid naslovna" style="margin-bottom: 0;">
+  <div class="container">
+        <h1 style=" font-family: Anton, sans-serif">Restavracija</h1>
+    <p style="text-align: center;">{{glavaStrani.podnaslov}}</p>
+  </div>
+</div>
+
+<nav class="floating-menu">
+  <ul class="main-menu">
+    <li>
+      <a routerLink="/" class="ripple">
+        <i class="fas fa-home fa-lg"></i>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/:idPlacila/kosarica" class="ripple">
+        <i class="fas fa-shopping-basket fa-lg"></i>
+      </a>
+    </li>
+  </ul>
+  <div class="menu-bg"></div>
+</nav>
+
+<div class="text-center star "[innerHTML] = "glavaStrani.ocena | zvezdice"> </div>
+
+<!--<div class="container">-->
+
+<!--    <input aria-label="Search" class="form-control" placeholder="Iskanje" type="text">-->
+
+<!--</div>-->
+<div class="container">
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Skoči na</button>
+    <div id="myDropdown" class="dropdown-content">
+      <input type="text" placeholder="Išči.." id="myInput" onkeyup="filterFunction()">
+      <a (click)="goTo('mostPopular')">Najbolj priljubljene jedi</a>
+      <a (click)="goTo('menu')">Menu</a>
+
+    </div>
+  </div>
+</div>
+
+<div class='container'>
+
+  <a href="/{{potrebenid}}/vnoshrane" class="btn btn-info btn-block btn-lg">Dodaj artikel</a>
+
+</div>
+
+<div class="container">
+  <p class="mostpopular" id="mostpopular">{{mostPopular.keyword}}</p>
+
+  <div class="row text-center">
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4" *ngFor="let artikel of artikel|slice:0:3;">
+
+
+      <div class="card " style="width:100% ">
+      <span class="notify-badge">{{artikel.cena}}&euro;</span>
+      <img alt="Card image" class="card-img-top "
+           src="{{artikel.slika}}">
+        <div class="collapse" id="{{artikel.naziv |replace}}">
+          <div class="card card-body">
+            Alergeni: {{artikel.alergeni | alergeni}}
+          </div>
+        </div>
+    <div class="card-body">
+      <h4 class="card-title">{{artikel.naziv}}</h4>
+      <p class="card-text">{{artikel.opis}}</p>
+      <a routerLink="/{{potrebenid}}/vnoshrane" class="btn btn-warning" style="margin-right: 5px">Urejaj</a>
+      <a routerLink="/{{potrebenid}}/vnoshrane" class="btn btn-danger">Odstrani</a>
+      <a class="btn btn-primary informacije" data-toggle="collapse" href="#{{artikel.naziv | replace}}" role="button"
+      aria-expanded="false" aria-controls="#{{artikel.naziv | replace}}">
+      <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+           xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+              d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path
+          d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+        <circle cx="8" cy="4.5" r="1"/>
+      </svg>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+
+
+
+<div class="container ">
+
+
+  <p class="mostpopular" id="menu">{{menuVse.keyword}}</p>
+
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6" *ngFor="let artikel of artikel">
+      <div class="card">
+        <div class="card-horizontal">
+          <span class="notify-badge">{{artikel.cena}}&euro;</span>
+          <div class="img-square-wrapper">
+            <img alt="Card image cap"
+                 class="slikamenu"
+                 src="{{artikel.slika}}">
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">{{artikel.naziv}}</h4>
+            <p class="card-text">{{artikel.opis}}</p>
+          </div>
+        </div>
+        <div class="collapse" id="{{artikel.naziv | replace}}">
+          <div class="card card-body">
+            Alergeni: {{artikel.alergeni | alergeni}}
+          </div>
+        </div>
+        <div class="card-footer">
+          <a routerLink="/{{potrebenid}}/vnoshrane" class="btn btn-warning" style="margin-right: 5px">Urejaj</a>
+          <a routerLink="/{{potrebenid}}/vnoshrane" class="btn btn-danger">Odstrani</a>
+          <a class="btn btn-primary informacije" data-toggle="collapse" href="#{{artikel.naziv|replace}}" role="button"
+             aria-expanded="false" aria-controls="#{{artikel.naziv|replace}}">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-info-circle" fill="currentColor"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+              <path
+                d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588z"/>
+              <circle cx="8" cy="4.5" r="1"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <button class="nav-link btn btn-outline-dark" routerLink="/osnovno/{{potrebenid}}/menu">Spremeni v pogled za uporabnika</button>
+  </div>
+</div>
+
+
+
+<script src="/assets/javascripts/dropdown.js"></script>

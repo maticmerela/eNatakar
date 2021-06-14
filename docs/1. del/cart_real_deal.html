@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="utf-8">
+    <title>cart_real_deal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a>
+        &emsp; &emsp;&emsp;&emsp;&emsp;&emsp;
+    </a>
+    <a class="navbar-brand mb-3" href="#">
+        <i class="fas text-info fa-utensils fa-2x"></i>
+        <t1 class="anton"> eNatakar &emsp;</t1>
+        <i class="fab fa-instagram fa-sm">&ensp;</i>
+        <i class="fab fa-facebook-f fa-sm">&ensp;</i>
+        <i class="fab fa-twitter fa-sm"></i>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <a class="nav-item col-9"></a>
+        <a class="col-sm-2 text-center">
+            <button type="button" class="btn btn-outline-dark"><i class="fas fa-user"></i> &ensp; Miha Novak</button>
+        </a>
+    </div>
+
+
+</nav>
+<br>
+
+
+
+<div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+    <div class="kosarica">
+
+        <h3>Košarica <span class="fas fa-shopping-cart"></span></h3>
+        <ul style="list-style-type:none;">
+            <li><span class="kolicina">1X</span><span class="artikel">Pivo Pelicon 3rd Pill</span> <span class="cena">2€</span></li>
+            <li><span class="kolicina">2X</span><span class="artikel">Burger Texas Classic</span> <span class="cena">10€</span></li>
+            <li><strong><span class="kolicina">Skupaj</span> <span class="cena">12€</span></strong></li>
+        </ul>
+    </div>
+
+
+    <div class="placilo">
+
+        <h2>Plačilo <span class="fas fa-credit-card"></span></h2>
+        <p> Prosimo, izpolnite spodnja polja.</p>
+        <form action="#" onsubmit="validiraj()">
+            <div class="form-group">
+                <lable><strong>Ime in priimek imetnika kartice:</strong></lable>
+                <input name="ime" type="text" class="form-control" id="ime" placeholder="Ime Priimek" required>
+            </div>
+
+
+            <div class="form-group">
+                <lable><strong>Številka kartice:</strong></lable>
+                <input name="kartica" type="text" class="form-control" id="kartica" size="19"
+                       placeholder="0000 0000 0000 0000" required>
+            </div>
+            <div class="form-group">
+                <lable><strong>CVV:</strong></lable>
+                <input name="cvv" type="text" class="form-control" id="cvv" size="3" placeholder="000" required>
+            </div>
+            <div class="form-group">
+                <p><strong>Veljavno do:</strong></p>
+
+                <label> Mesec:</label>
+                <select name="mesec" class="form-control" id="mesec">
+                    <option selected>Januar</option>
+                    <option>Februar</option>
+                    <option>Marec</option>
+                    <option>April</option>
+                    <option>Maj</option>
+                    <option>Junij</option>
+                    <option>Julij</option>
+                    <option>Avgust</option>
+                    <option>September</option>
+                    <option>Oktober</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label> Leto:</label>
+                <select name="leto" class="form-control" id="leto">
+                    <option selected>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                </select>
+
+            </div>
+            <div class="form-group">
+                <label><strong>Opombe:</strong></label>
+                <textarea class="form-control" id="opombe" name="opombe" rows="3"
+                          placeholder="Vnesite opombe npr. brez ledu, brez gob..."></textarea>
+
+            </div>
+            <div class="form-group">
+                <lable><strong>Oznaka mize:</strong></lable>
+                <input name="miza" type="text" class="form-control" id="miza" placeholder="0" required>
+            </div>
+
+            <button type="submit" class="btn btn-info">Plačaj in oddaj naročilo</button>
+            <button type="reset" class="btn btn-outline-info">Izbriši vnose</button>
+
+        </form>
+    </div>
+
+</div>
+<a class="col-2"></a>
+<div class="container">
+
+    <nav aria-label="pagination">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><span class="page-link">Nazaj</span></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+                <span class="page-link">2<span class="sr-only">(current)</span></span>
+            </li>
+
+        </ul>
+    </nav>
+</div>
+
+<script>
+    function validiraj(){
+        var ime = document.getElementById('ime').value;
+        var kartica = document.getElementById('kartica').value;
+        var cvv = document.getElementById('cvv').value;
+        var imeReg = /^([a-zA-Zwčćžšđ]{2,}\s[a-zA-Zwčćžšđ]{1,}'?-?[a-zA-Z]{2,}\s?([a-zA-Z]{1,})?)/;
+        var karticaReg = /(\d{4} ){3}\d{4}/;
+        var cvvReg = /\d{3}/;
+        var odg = '';
+        var uspesno = true;
+        if(imeReg.test(ime) == false)
+        {
+            odg = 'Prosimo, vnesite ime in priimek po vzorcu: Janez Novak';
+            uspesno = false;
+        }
+
+        if(karticaReg.test(kartica) == false)
+        {
+            odg += '\nProsimo, vnesite številko kartice po vzorcu: 0000 0000 0000 0000';
+            uspesno = false;
+
+        }
+        if(cvvReg.test(cvv) == false)
+        {
+            odg += '\nProsimo, vnesite CVV številko po vzorcu: 000';
+            uspesno = false;
+
+        }
+        alert(odg);
+        return uspesno;
+
+
+    }
+
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+</html>

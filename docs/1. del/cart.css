@@ -1,0 +1,64 @@
+
+body {
+    background-image: url('slika1.jpg');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+
+.kosarica {
+
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 20px 15px 20px;
+    border-radius: 5px;
+    margin: 5px;
+
+
+}
+
+.placilo {
+
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px 20px 15px 20px;
+
+    border-radius: 5px;
+    position: relative;
+    bottom: -1ex;
+
+    margin: 5px
+
+}
+
+span.cena {
+    float: right;
+}
+
+.container.pagination {
+    color: #17A2B8;
+}
+
+.anton {
+    font-family: "Anton";
+    font-size: 1.5em;
+}
+
+span.artikel {
+    position: relative;
+    left: -2ex;
+
+}
+span.kolicina {
+    position: relative;
+    left: -3ex;
+
+}
+
+h2 {
+    font-family: "Anton";
+
+}
+h3 {
+    font-family: "Anton";
+}

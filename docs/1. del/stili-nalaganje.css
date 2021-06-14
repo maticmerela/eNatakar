@@ -1,0 +1,30 @@
+.anton {
+	font-family: "Anton";
+	font-size: 1.5em;
+}
+.sredinska-poravnava{text-align:center;}
+.desna-poravnava {text-align: right}
+.rob-zgoraj-spodaj {margin-top: 50px;
+					margin-bottom: 30px;}
+.sredinska-poravnava{text-align:center;}
+.desna-poravnava {text-align: right}
+.barvaContainer{background-color: white}
+body {
+		background-image: url('1. del/slika10.jpg');
+		background-position: bottom;
+		background-repeat: repeat;
+		background-attachment: fixed;
+		background-size: 100%;
+		}
+.obroba {
+        border: 3px solid white;
+        padding: 20px 20px;
+        background: white;
+        width: 500px;
+        text-align: left;
+        margin-bottom: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 20px;
+}
+.rob-spodaj{margin-bottom: 15px;}

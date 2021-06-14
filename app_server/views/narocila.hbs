@@ -1,0 +1,43 @@
+<br>
+    <h1 class='anton'>{{naslov}}</h1>
+    <div class="tabela">
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th>{{glavaTabele.stolpec1}}</th>
+                <th>{{glavaTabele.stolpec2}}</th>
+                <th>{{glavaTabele.stolpec3}}</th>
+                
+                <th>{{glavaTabele.stolpec5}}</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each narocila as |narocilo|}}
+            <tr>
+                <td>{{narocilo.stMize}}</td>
+                <td>
+                    {{#each kosarica as |kos|}}
+                        <strong>{{kos.kolicina}}X </strong> {{kos.naziv}}<br>
+                    {{/each}}
+                </td>
+                <td>{{{prazenNiz narocilo.opombe}}}</td>
+                
+                <td>
+                    <button onclick="brisi({{narocilo.stMize}})"type="button" id="{{narocilo.stMize}}" class="btn btn-outline-info">Sprejeto</button>
+                </td>
+            </tr>
+            {{/each}}
+
+            </tbody>
+        </table>
+        <button class="btn btn-outline-warning"><a id="uredi" href="/ponudnik/menu">Urejanje menija</a></button>
+    </div>
+    </div>
+    <script> function brisi(id) {
+        var gumb = document.getElementById(id);
+        gumb.style.display = "none"; 
+    }
+    </script>
+
+

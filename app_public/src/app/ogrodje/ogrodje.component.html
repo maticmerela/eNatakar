@@ -1,0 +1,56 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class = "col-lg-5 col-xl-8 col-md-4 col-10">
+    <a class="navbar-brand mb-3" href="#">
+      <i class="fas text-info fa-utensils fa-2x"></i>
+      <a class="anton paddingNaslov" style="color: black; font-size: 35px; padding-bottom: 8px" href="/">eNatakar</a>
+      <a>&emsp;</a>
+      <i class="fab fa-instagram fa-sm paddingSocial">&ensp;</i>
+      <i class="fab fa-facebook-f fa-sm paddingSocial">&ensp;</i>
+      <i class="fab fa-twitter fa-sm"></i>
+    </a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="col-lg-7 col-xl-4 col-md-8 col-2" ></div>
+
+    <div id="kosarica">
+      <a class="nav-link btn mx-2" href="/kosarica">
+        <i class="fas fa-shopping-cart"></i>
+      </a>
+    </div>
+
+    <div id="prijava">
+      <a routerLink="/prijava">
+        <button class="nav-link btn btn-outline-dark">Prijava</button>
+      </a>
+    </div>
+
+    <div id="registracija">
+      <a routerLink="/regclana">
+        <button class="nav-link btn btn-info mx-2">Registracija</button>
+      </a>
+    </div>
+
+    <div id="registracijaPonudnika">
+    <a routerLink="/regponudnika">
+      <button class="nav-link btn btn-secondary mx-2">Včlanite svojo restavracijo!</button>
+    </a>
+  </div>
+    <div class="col-sm-2 text-center" id="user">
+      <button type="button" class="btn btn-info"><i class="fas fa-user"></i> &ensp; Miha Novak</button>
+    </div>
+    <div class="col-sm-2 text-center" id="odjava">
+      <button type="button" class="btn btn-outline-dark"><i class="fas fa-user"></i>Odjava</button>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+

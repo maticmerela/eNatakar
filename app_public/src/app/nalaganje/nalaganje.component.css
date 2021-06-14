@@ -1,0 +1,30 @@
+.sredinska-poravnava{text-align:center;}
+.desna-poravnava {text-align: right}
+.rob-zgoraj-spodaj {margin-top: 50px;
+  margin-bottom: 30px;}
+.sredinska-poravnava{text-align:center;}
+.desna-poravnava {text-align: right}
+.barvaContainer{background-color: white}
+body {
+  background-image: url('../../assets/images/slika10.jpg');
+  background-position: bottom;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+.nalaganjePoravnava{
+  text-align: center;
+  padding-bottom: 30px;
+}
+.obroba {
+  border: 3px solid white;
+  padding: 20px 20px;
+  background: white;
+  width: 500px;
+  text-align: left;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 20px;
+}
+.rob-spodaj{margin-bottom: 15px;}

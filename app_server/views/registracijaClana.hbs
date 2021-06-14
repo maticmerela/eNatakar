@@ -1,0 +1,41 @@
+<div class="bodyReg">
+    <div class="container skatla">
+
+        <div class="daljsiObrazec">
+
+            <h1 class="naslov">{{vsebina.naslov}}</h1>
+
+            <form id="kreirajUporabnika" action="/api/registracijaClana" method="post" role="form" autocomplete="on">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label><strong>Ime: </strong></label>
+                        <input name="ime" class="form-control" type="text" id="ime" placeholder="Vnesite ime" required>
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label><strong>Priimek: </strong></label>
+                        <input name="priimek" class="form-control" type="text" id="priimek" placeholder="Vnesite priimek" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label><strong>Datum rojstva: </strong></label>
+                    <input class="form-control" type="date" id="datum" required>
+                </div>
+                <div class="form-group">
+                    <label><strong>E-poštni naslov: </strong></label>
+                    <input name="uporabniskoIme" class="form-control" type="email" id="mail" placeholder="Vnesite e-poštni naslov" required>
+                </div>
+                <div class="form-group">
+                    <label><strong>Geslo: </strong></label>
+                    <input name="geslo" class="form-control" type="password" id="geslo" placeholder="Vnesite geslo" autocomplete="off" required>
+                </div>
+
+                <div class="gumbi">
+                    <a href="/"><btn class="btn btn-info" name="submit" value="">Včlani se</btn></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/javascripts/regularni_registracijaClana.js"></script>
+<script src="././app_api/controllers/ow.js"></script>

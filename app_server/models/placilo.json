@@ -1,0 +1,15 @@
+[
+        {
+          "naziv": "Burger",
+          "cena": 14,
+          "slika": "burger.jpg",
+          "kolicina": 2
+        } , {
+          "naziv": "Pizza",
+          "cena": 8,
+          "slika": "pizza.jpg",
+          "kolicina": 1
+        }
+    
+
+]

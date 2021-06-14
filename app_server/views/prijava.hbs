@@ -1,0 +1,40 @@
+<div class="bodyPrijava">
+    <div class="container skatla">
+        <div class="prijava">
+
+            <h1 class="naslov">{{vsebina.naslov}}</h1>
+
+            <form method="post" autocomplete="on">
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"><i class="fas fa-user-circle"></i></label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="email" name="mail" id="mail" placeholder="Vnesite e-poštni naslov" required>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label"><i class="fas fa-key"></i></label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="password" name="geslo" placeholder="Vnesite geslo"  autocomplete=off required>
+                    </div>
+                </div>
+
+                <br>
+                <div class="gumbi">
+                    <a href="/"><btn class="btn btn-info" name="submit" value="">Prijava</btn></a>
+                    <btn class="btn btn-outline-info" type="reset" value="">Počisti</btn>
+                </div>
+
+            </form>
+
+            <br>
+            <br>
+
+            <p class="text-center">{{vsebina.bottomText}}</p>
+            <a href="./registracijaClana">{{vsebina.registracija}}</a>
+        </div>
+    </div>
+</div>

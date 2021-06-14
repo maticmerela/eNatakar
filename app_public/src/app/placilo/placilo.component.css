@@ -1,0 +1,46 @@
+.obdelava, .obdelava:hover {
+    color: rgb(255,255,255);
+  }
+  
+  /*RAZDELEK KOŠARICA PRI PLAČILU*/
+  .kosarica {
+ 
+     background-color: rgba(255, 255, 255, 0.9);
+     padding: 20px 20px 15px 20px;
+     border-radius: 5px;
+     margin: 5px;
+   }
+   
+   /*RAZDELEK PLAČILO PRI PLAČILU*/
+   .placilo {
+   
+     background-color: rgba(255, 255, 255, 0.9);
+     padding: 20px 20px 15px 20px;
+     border-radius: 5px;
+     position: relative;
+     bottom: -1ex;
+     margin: 5px
+   }
+   
+   /*POZICIJA CENE*/
+   span.cena {
+     float: right;
+   }
+   
+   /*POZICIJA ARTIKLA*/
+   span.artikel {
+     position: relative;
+     left: -2ex;
+   }
+   
+   /*POZICIJA KOLIČINE*/
+   span.kolicina {
+     position: relative;
+     left: -3ex;
+   }
+   body {
+     background-image: url('../../assets/images/slika1.jpg');
+     background-position: bottom right;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+   }

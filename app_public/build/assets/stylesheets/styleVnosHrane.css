@@ -1,0 +1,19 @@
+body {
+    background-image: url('../images/slika9.jpg');
+    background-position: bottom;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.obroba {
+    border: 3px solid white;
+    padding: 20px 20px;
+    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+}
+.rob-spodaj{margin-bottom: 15px;}

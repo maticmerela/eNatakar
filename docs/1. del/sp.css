@@ -1,0 +1,93 @@
+
+.anton {
+	font-family: "Anton";
+	font-size: 1.5em;
+}
+
+.naslov {
+    font-family: "Anton";
+    font-size: 3em;
+    text-align: center;
+    margin: 0.7em;
+}
+
+.prijava {
+    background-color: rgba(255,255,255,0.9);
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 4em;
+    padding-right: 4em;
+    border-radius: 20px;
+
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.daljsiObrazec {
+
+    text-align: justify;
+    border-radius: 40px;
+    background-color:rgba(255,255,255,0.9);
+    padding: 12%;
+    mask-position: center;
+}
+
+.container {
+    padding: 5em;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5em;
+}
+
+.bodyPrijava {
+    background-image: url('1. del/hrana1.jpg');
+    background-position: bottom;
+   /* background-repeat: repeat;*/
+    background-attachment: fixed;
+    background-size: 1600px;
+}
+
+.bodyReg {
+    background-image: url('1. del/koktejli1.jpg');
+    background-position: bottom;
+   /* background-repeat: repeat;*/
+    background-attachment: fixed;
+    background-size: 1600px;
+}
+
+.bodyPon {
+    background-image: url('1. del/koktejli.jpg');
+    background-position: bottom;
+   /* background-repeat: repeat;*/
+    background-attachment: fixed;
+    background-size: 2000px;
+}
+
+.bodySprejeto {
+    background-image: url('1. del/slika10.jpg');
+    background-position: bottom;
+   /* background-repeat: repeat;*/
+    background-attachment: fixed;
+    background-size: 1600px;
+}
+
+
+.gumbi {
+    text-align:center;
+    padding: 10%;
+
+}
+
+.container-fluid {
+    background-color: rgb(248,248,248);
+    margin: 0;
+}
+
+.h2 {
+    padding: .5em;
+    text-align: left;
+}

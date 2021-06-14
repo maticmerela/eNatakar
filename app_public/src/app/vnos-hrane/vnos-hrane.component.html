@@ -1,0 +1,120 @@
+<div [ngStyle]="{'background' : 'url(../../assets/images/slika9.jpg)'}">
+  <a class="col-2"></a>
+  <div class="row">
+    <div class="col-xl-3 col-lg-3 col-md-2 col-sm-1">
+
+    </div>
+    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 ">
+      <div class="obroba">
+        <h3 class="anton">{{naslov}}</h3>
+        <a class="col-2"></a>
+        <div>
+        <form (ngSubmit)="dodajNovArtikel()" id="vnosHraneObrazec">
+          <hr>
+          <div class="form-group">
+            <label for="izbira">{{navodila.vrsta}}</label>
+            <select class="form-control" id="izbira">
+              <option>"Juha"</option>
+              <option>"Predjed"</option>
+              <option>"Glavna Jed"</option>
+              <option>"Solata"</option>
+              <option>"Sladica"</option>
+              <option>"Pijača"</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="ime">{{navodila.ime}} </label>
+            <input [(ngModel)]="novArtikel.naziv" name="naziv" type="text" class="form-control" id="ime" placeholder="Vnesite ime jedi!" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cena">{{navodila.cena}} </label>
+            <input [(ngModel)]="novArtikel.cena"name="cena" type="text" class="form-control" id="cena" placeholder="Določite ceno v EUR!" required>
+          </div>
+
+          <div class="file-upload-wrapper rob-spodaj">
+            <label> {{navodila.slika}}</label>
+            <input [(ngModel)]="novArtikel.slika"name="slika" type="file" id="input-file-max-fs" class="file-upload" data-max-file-size="2M"/>
+          </div>
+
+          <div class="form-group ">
+            <label for="opis">{{navodila.opis}} </label>
+            <textarea [(ngModel)]="novArtikel.opis" name="opis" class="form-control" id="opis" rows="4"></textarea>
+            <small id="dodatnaNavodila" class="form-text text-muted">Opis jedi lahko dodate po
+              želji.</small>
+          </div>
+
+          <div  class="checkbox">
+            <div class="rob-spodaj">
+              <strong>{{navodila.alergeni}}</strong>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[0] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.gluten}}</label>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[1] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.raki}}</label>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[2] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.jajca}}</label>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[3] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.arasidi}}</label>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[4] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.laktoza}}</label>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[5] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.soja}}</label>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[6] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.orescki}}</label>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[7] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.zelena}}</label>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[8] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.gorcica}}</label>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[9] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.sezam}}</label>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[10] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.dioksid}}</label>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[11] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.bob}}</label>
+            </div>
+            <div class="checkbox">
+              <label><input [checked] ="novArtikel.alergeni[12] === true" name="alergeni" type="checkbox" value=""> {{navodila.alergeniSeznam.brez}}</label>
+            </div>
+          </div>
+
+          <a class="col-2"></a>
+          <div class="rob-spodaj">
+            <strong>{{navodila.obvezno}}</strong>
+          </div>
+          <a class="col-2"></a>
+          <p>
+
+            <button type="submit" class="btn btn-info"><a routerLink="/">Dodaj na meni</a></button>
+
+            <button type="reset" class="btn btn-outline-info">Izbriši vnose</button>
+          </p>
+          <hr>
+        </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xl-3 col-lg-3 col-md-2 col-sm-1">
+
+    </div>
+  </div>
+
+</div>
+<script type="text/javascript">
+  ('.file-upload').file_upload();
+</script>
+<!-- referenca na datoteko za preverjanje z regEx -->
+

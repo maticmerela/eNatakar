@@ -1,0 +1,13 @@
+<div class="col-sm-12 col-12">
+  <button (click)="dodajVsebinoPodatkovneBaze()" type="button" class="btn btn-success btn-sm" [disabled]="!jePovezava()"><span
+    class="fas fa-file-import"></span>&nbsp;Dodaj začetno vsebino
+  </button>
+</div>
+<hr>
+<div class="col-sm-12 col-12">
+  <button (click)="izbrisiVsebinoPodatkovneBaze()" type="button" class="btn btn-danger btn-sm" [disabled]="!jePovezava()"><span class="fas fa-eraser"></span>&nbsp;Izbriši
+    vsebino
+  </button>
+</div>
+<hr>
+<div role="contentinfo" *ngIf="sporociloObrazca && sporociloObrazca['sporočilo']" class="font-weight-bold alert alert-light">{{ sporociloObrazca["sporočilo"] }}</div>

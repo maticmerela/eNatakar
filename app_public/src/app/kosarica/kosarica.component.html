@@ -1,0 +1,104 @@
+<div [ngStyle]="{'background' : 'url(../../assets/images/slika1.jpg)'}"></div>
+<div class ="ozadjeKosarica" style = "padding: 0%; margin:0%; width:100%; height: 600px;">
+
+
+    <!-- OSNOVNI NASLOV -->
+
+    <div class="container kontejner">
+        <h1 style = "color: black; padding-top: 10px">Košarica</h1>
+        <p style = "color: black">Preglejte svoje naročilo</p>
+    </div>
+
+
+
+    <!-- HANDLEBARS -->
+
+            <div class="container kontejner" *ngFor="let izdelek of izdelki">
+                <div class="d-flex flex-row">
+                    <table class="table table-hover" style="background-color: white; border-radius: 5px">
+                        <tbody>
+                        <tr>
+                            <td rowspan="2" style="padding: 7px;">
+                                <div>
+                                    <img src="{{izdelek.slika}}" class="rounded" style="max-width: 100px; height:auto;">
+                                </div>
+                            </td>
+                            <td style="padding: 7px">
+                                {{izdelek.naziv}}
+                            </td>
+                            <td style="padding: 7px">
+                        <span name="cena">
+                            {{izdelek.cena}}
+                        </span>€
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td style="padding: 7px">
+                                Količina:
+                                <input type="number" min="1" max="20" step="1" value="{{izdelek.kolicina}}" name="kok"/>
+                            </td>
+                            <td style="padding: 7px">
+                                <p style="margin-bottom: 10px;">Skupaj:</p>
+                                <span name="skupi">
+
+                        </span>€
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+
+                <button (click)="izbrisiArtikelKosarice(placilo._id, izdelek._id)"type="button" class="btn btn-outline-dark"
+                        style="padding-left: 8px; padding-right: 8px; padding-bottom: 0px; padding-top: 0px; height: 40px; margin-left: 5px; background-color: white;">
+                    <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-x-circle" fill="currentColor"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path fill-rule="evenodd"
+                              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+
+
+
+
+
+    <!-- SKUPAJ -->
+
+    <div class="container kontejner">
+        <div class="card" style="width: 100%; display:flex; flex-direction: row; margin-bottom:16px;">
+            <div class="card-header" style="text-align: end; padding-top:12px"><strong>Skupna cena naročila:</strong></div>
+            <div class="card-body" style="padding:12px">
+                <p class="card-text" style="text-align: end;" id="skupnaCena"><strong>
+
+
+
+
+
+                </strong></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--   STRANI   -->
+
+    <div class="container kontejner">
+        <nav aria-label="pagination">
+            <ul class="pagination justify-content-center">
+
+                <li class="page-item" style="background-color: white; border-radius:5pt; margin-right: 6pt"><a id="gumb" class="nav-link btn btn-outline-dark" routerLink="/">Nazaj na menu</a></li>
+                <li class="page-item" style="background-color: white; border-radius:5pt;"><a class="nav-link btn btn-outline-dark"  routerLink="/placilo/{{placilo._id}}">Naprej na plačilo</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    </div>
+
+    <script src="../../assets/javascripts/kosarica.js"></script>

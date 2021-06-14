@@ -1,0 +1,53 @@
+{
+  "name": "2.-3.-del-lp",
+  "version": "1.2.3",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "menu-uvoz": "docker cp ./app_server/models/menu.json enatakar-mongodb:/menu.json ;docker exec -it enatakar-mongodb mongoimport --db enatakar --collection Meniji --mode upsert --upsertFields naziv --jsonArray --file menu.json; docker exec -it enatakar-mongodb rm -rf menu.json; docker exec -it enatakar-mongodb bash -c \"",
+    "menu-brisi": "docker exec -it enatakar-mongodb bash -c \"mongo enatakar --eval 'db.Meniji.remove({})'\"",
+    "menu-prikazi": "docker exec -it enatakar-mongodb bash -c \"mongo enatakar --eval 'db.Meniji.find()'\"",
+    "narocilo_ponudnik-uvoz": "docker cp ./app_server/models/narocilo_ponudnik.json enatakar-mongodb:/narocilo_ponudnik.json ;docker exec -it enatakar-mongodb mongoimport --db enatakar --collection Placila --mode upsert --upsertFields naziv --jsonArray --file narocilo_ponudnik.json; docker exec -it enatakar-mongodb rm -rf narocilo_ponudnik.json; docker exec -it enatakar-mongodb bash -c \"",
+    "narocilo_ponudnik-brisi": "docker exec -it enatakar-mongodb bash -c \"mongo enatakar --eval 'db.Placila.remove({})'\"",
+    "narocilo_ponudnik-prikazi": "docker exec -it enatakar-mongodb bash -c \"mongo enatakar --eval 'db.Placila.find()'\"",
+    "registracijaPonudnika-uvoz": "docker cp ./app_server/models/registracijaPonudnika.json enatakar-mongodb:/registracijaPonudnika.json ;docker exec -it enatakar-mongodb mongoimport --db enatakar --collection Ponudniki --mode upsert --upsertFields naziv --jsonArray --file registracijaPonudnika.json; docker exec -it enatakar-mongodb rm -rf registracijaPonudnika.json; docker exec -it enatakar-mongodb bash -c \"",
+    "registracijaPonudnika-brisi": "docker exec -it enatakar-mongodb bash -c \"mongo enatakar --eval 'db.Ponudniki.remove({})'\"",
+    "registracijaPonudnika-prikazi": "docker exec -it enatakar-mongodb bash -c \"mongo enatakar --eval 'db.Ponudniki.find()'\"",
+    "registracijaUporabnik-uvoz": "docker cp ./app_server/models/registracijaUporabnik.json enatakar-mongodb:/registracijaUporabnik.json ;docker exec -it enatakar-mongodb mongoimport --db enatakar --collection Uporabniki --mode upsert --upsertFields naziv --jsonArray --file registracijaUporabnik.json; docker exec -it enatakar-mongodb rm -rf registracijaUporabnik.json; docker exec -it enatakar-mongodb bash -c \"",
+    "registracijaUporabnik-brisi": "docker exec -it enatakar-mongodb bash -c \"mongo enatakar --eval 'db.Uporabniki.remove({})'\"",
+    "registracijaUporabnik-prikazi": "docker exec -it enatakar-mongodb bash -c \"mongo enatakar --eval 'db.Uporabniki.find()'\"",
+    "enatakar-izvoz-produkcija": "docker exec -it enatakar-mongodb bash -c \"mongorestore --host enatakar-shard-00-00.pakrt.mongodb.net:27017,enatakar-shard-00-01.pakrt.mongodb.net:27017,enatakar-shard-00-02.pakrt.mongodb.net:27017 --ssl --username enatakar --authenticationDatabase admin -d enatakar ./enatakar\"; docker exec -it enatakar-mongodb bash -c \"rm -rf ./enatakar\"",
+    "menu-uvoz-lokalno": "mongoimport --db enatakar --collection Meniji --mode upsert --upsertFields naziv --jsonArray --file app_server/models/menu_vse.json & mongoimport --db enatakar --collection Meniji --mode upsert --upsertFields naziv --jsonArray --file app_server/models/menu.json",
+    "uporabniki-uvoz-lokalno": "mongoimport --db enatakar --collection Uporabniki --mode upsert --upsertFields naziv --jsonArray --file app_server/models/registracijaUporabnik.json",
+    "ponudniki-uvoz-lokalno": "mongoimport --db enatakar --collection Ponudniki --mode upsert --upsertFields naziv --jsonArray --file app_server/models/registracijaPonudnika.json",
+    "placila-uvoz-lokalno": "mongoimport --db enatakar --collection Placila --mode upsert --upsertFields naziv --jsonArray --file app_server/models/narocilo_ponudnik.json",
+    "menu-uvoz5": "docker cp ./app_server/models/menu.json enatakar-mongodb:/menu.json; docker exec -it enatakar-mongodb mongoimport --db enatakar --collection Meniji --mode upsert --upsertFields naziv --jsonArray --file menu.json; docker exec -it enatakar-mongodb rm -rf menu.json; docker exec -it menu-mongodb bash -c \"mongo enatakar --eval 'db.Meniji.find().forEach(function(dokument) for (var i = 0; i < dokument.alergeni.length; i++) { dokument.alergeni[i]._id = ObjectId() } db.Meniji.update({ \"_id\" : dokument._id }, dokument) })'\"",
+    "dev": "concurrently --kill-others \"npm run ponudniki-uvoz-lokalno\" \"npm run uporabniki-uvoz-lokalno\" \"npm run placila-uvoz-lokalno\""
+  },
+  "engines": {
+    "node": ">=14.10.1",
+    "npm": ">=6.14.8"
+  },
+  "dependencies": {
+    "@angular/core": "^11.0.5",
+    "@popperjs/core": "*",
+    "axios": "*",
+    "chart.js": "^2.9.4",
+    "cookie-parser": "*",
+    "debug": "*",
+    "easyinvoice": "^1.0.108",
+    "express": "*",
+    "handlebars": "*",
+    "hbs": "*",
+    "http-errors": "*",
+    "mongoose": "*",
+    "morgan": "*",
+    "nodemon": "^2.0.6",
+    "react-popper": "*",
+    "swagger-jsdoc": "^6.0.0",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "concurrently": "*"
+  }
+}
